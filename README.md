@@ -24,7 +24,7 @@ This is a simple C++ encryption program designed to encode text using a custom a
 2. Navigate to the directory containing the source code.
 3. Compile the program using the following command:
    ```bash
-   g++ prograName.cpp
+   g++ programName.cpp
    ```
 4. Run the program using:
    ```bash
