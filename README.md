@@ -1,50 +1,45 @@
-#include <iostream>
+# Encryption Program
 
-int main(){
-    std::string word; // initiateas the variable
-    std::cout << "Enter a word: ";
-    std::getline(std::cin >> std::ws,word); // prompts for input
-    std::cin.clear(); // reboots the buffer incase of errors
-    fflush(stdin); // flushes it out
-   
-		
-// this is my guide key to get indexes
-    char letters[] = {'|', 'n', '8', '#', 'k', '"', '=', 'c', 'W', '[', 'O', ';', '&', 'v', '9', 'z', 'h',
-                      '/', 'I', '!', 'j', 'm', 'B', 'K', '?', '0', '$', 'A', '^', '{', 'b', 'U', 'L', 'x',
-                      'e', ',', 'G', 'Q', 'X', '2', '+', ' ', 'g', ']', '~', 'w', 'a', '.', 'i', '3', 'l',
-                      '4', 'Y', 'D', 'J', 'u', 'P', '1', 'V', '@', 'Z', 'y', ':', '\\', 't', '`', '6', 'M',
-                      ')', '\'', '*', '-', '}', '>', 'q', '(', 'o', 'T', 'C', '<', '7', '_', 'p', 'r', 's', 
-                      'd', 'E', 'F', 'R', '5', '%', 'f', 'N','H', 'S'};
-                      
-  //this is the key fot encryption
-    char key[] = {    'Q', 'V', 'B', 'l', 'y', 'o', '9', 'f', 'K', 'w', 'Y', '<', 'G', 'T', '&', '+', '{', 
-                      '-','s', 'I', '%', '5', 'M', '@', '[', 't', '}', 'J', '1', 'r', '*', '!', 'H', 'W', 
-                      '8', 'S','6', '~', ')', 'N', '\'', '?', 'p', 'O', ':', '_', 'U', ';', 'm', 'Z', 'i', 
-                      ']', 'h', 'X', 'z', ' ', 'u', 'c', 'E', 'g', '7', '4', 'n', 'A', 'x', '3', '#', 'b', 
-                      'j', '=', '$', 'P', 'R', '/', 'k', ',', '(', '^', 'e', '\\', '"', '`', '2', '.', 'D',
-                      '0', 'L', '|', 'F', 'v', 'd', 'a', 'q', 'C', '>'};
+## Overview
+This is a simple C++ encryption program designed to encode text using a custom algorithm. The program does not rely on external libraries or graphical interfaces, making it lightweight and easy to understand. All input and output occur through the terminal.
 
-  //index keeper
-    int alphabet;
+## Features
+- Encrypts plain text using a basic substitution or shift-based algorithm.
+- Implements the encryption logic without using any external libraries.
+- Designed to be simple and educational.
 
-  // iterate for every key in my word
-    for(int i = 0;i < (int) word.length();i++){
-        // get the character at that index
-        char let = word.at(i);
-        // iterate thru the key replacing with the index
-        for(int i = 0;i < sizeof(letters)/sizeof(char);i++){
-            if(let == letters[i]){
-                alphabet = i;
-            }
-            else{
-                continue;
-            }
-        }
-        // show the encryption
-        std::cout << key[alphabet];
-    }
-    // end with new line character
-    std::cout << std::endl;
-    // end code
-    return 0;
-}
+## Requirements
+- A C++ compiler (e.g., g++, clang++)
+- A terminal or command prompt to run the program
+
+## Installation
+1. Clone this repository or download the source code file.
+2. Ensure you have a C++ compiler installed on your system. Common compilers include:
+   - GCC: [gcc.gnu.org](https://gcc.gnu.org/)
+   - Clang: [clang.llvm.org](https://clang.llvm.org/)
+3. Compile the program using your preferred compiler.
+
+## Usage
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing the source code.
+3. Compile the program using the following command:
+   ```bash
+   g++ prograName.cpp
+   ```
+4. Run the program using:
+   ```bash
+   ./a.out
+   ```
+5. Follow the on-screen instructions to encrypt text.
+
+
+## Notes
+- Input validation and edge cases (e.g., non-alphabetic characters) are handled in the logic.
+
+## License
+© 2025 Immanuel Mboowa. All Rights Reserved
+
+## Author
+[imboowa](https://github.com/imboowa)
+
+
