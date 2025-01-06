@@ -20,9 +20,9 @@ int main(){
     for(int i = 0;i < (int) word.length();i++){ 
         // get the character at that index 
         char let = word.at(i); // iterate thru the key replacing with the index 
-        for(int i = 0;i < sizeof(letters)/sizeof(char);i++){ 
-            if(let == letters[i]){ 
-                alphabet = i; 
+        for(int j = 0;j < sizeof(letters)/sizeof(char);j++){ 
+            if(let == letters[j]){ 
+                alphabet = j; 
             } 
             else{ 
                 continue; 
