@@ -1,7 +1,7 @@
 # Encryption Program
 
 ## Overview
-This is a simple C++ encryption program designed to encode text using a custom algorithm. The program does not rely on external libraries or graphical interfaces, making it lightweight and easy to understand. All input and output occur through the terminal.
+This is a simple C++ encryption program designed to encrypt text using a custom algorithm. The program does not rely on external libraries or graphical interfaces, making it lightweight and easy to understand. All input and output occur through the terminal.
 
 ## Features
 - Encrypts plain text using a basic substitution or shift-based algorithm.
@@ -9,8 +9,8 @@ This is a simple C++ encryption program designed to encode text using a custom a
 - Designed to be simple and educational.
 
 ## Requirements
-- A C++ compiler (e.g., g++, clang++)
-- A terminal or command prompt to run the program
+- A C++ compiler (e.g., **g++ now on Windows**, **clang++ for MacOS**)
+- **A terminal for Unix systems** or **command prompt for Windows** to run the program
 
 ## Installation
 1. Clone this repository or download the source code file.
